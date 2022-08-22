@@ -1,0 +1,16 @@
+https://github.com/EmiLabarthe/Hola-Mundo.git
+md "Aplicacion de repositorios"
+cd "Aplicacion de repositorios"
+git clone "https://github.com/EmiLabarthe/Hola-Mundo.git"
+code .
+
+dir
+cd Hola-Mundo
+git pull
+
+md src
+cd src
+dotnet new console -n Program
+dotnet new classlib -n Library
+cd Program
+dotnet add Program.csproj reference ../Library/Library.csproj
